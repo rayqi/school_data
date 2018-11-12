@@ -4,6 +4,9 @@ const morgan = require('morgan')
 
 app.use(morgan('dev'))
 app.use('/api', require('./routes')) //require the api pages for students and grades
+app.use(express.static(__dirname + '/public'));
+
+
 
 app.use((err, req, res, next) => {
     console.error(err)
