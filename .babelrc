@@ -1,0 +1,7 @@
+{
+    "presets": [
+        "env",
+        "react"
+    ]
+}
+//This is the configuration file babel looks up for.
